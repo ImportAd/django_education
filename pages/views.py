@@ -7,4 +7,8 @@ def home_page_view(request):
 
 
 def about_page_view(request):
-    return render(request, "pages/about.html")
+    context = {
+        "name": "word",
+        "second": 6,
+    }
+    return render(request, "pages/about.html", context)
