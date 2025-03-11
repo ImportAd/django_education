@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
 <h1>Домашняя старница компании</h1>
 <p>Дата и время сейчас: {% now "DATETIME_FORMAT" %}</p>
 <p>В списке {{ inventory_list|length }} элементов</p>
@@ -8,3 +11,4 @@
 </ul>
 <p>{{ greeting | title}}</p>
 {% comment %}Add more content here!{% endcomment %}
+{% endblock %}
