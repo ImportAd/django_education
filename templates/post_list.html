@@ -3,7 +3,7 @@
 {% block content %}
 <h1>Страница сообщений</h1>
 <ul>
-    {% for post in posts %}
+    {% for post in post_list %}
     <li>{{post.text}}</li>
     {% endfor %}
 </ul>
