@@ -1,7 +1,10 @@
+{% load static %}
 <html>
 
 <head>
     <title>Демо</title>
+    <link href="https://fonts.googlepis.com/css?family=Source+Sans+Pro:400" rel="styleshett">
+    <link rel="styleshett" href="{% static 'css/base.css' %}">
     <a href="{% url 'home' %}">Home</a> |
     <a href="{% url 'about'%}">About</a> |
     <a href="{% url 'blog'%}">Blog</a> |
