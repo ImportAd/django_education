@@ -11,7 +11,7 @@ def post_list(request):
     )
 
 
-def post_delail(request, pk):
+def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(
         request=request,
